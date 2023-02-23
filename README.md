@@ -1,6 +1,10 @@
 # maplibre-y-not-defined
 
-Reproduce error `y is not defined`
+FIXED!!
+
+If there is a difference in production and development, check `browserlist` in `package.json`. 
+
+Reproduce error `y is not defined`.
 
 ## How to reproduce
 
