@@ -10,18 +10,16 @@ function createMap(id) {
   });
 }
 
-export function Maplibre({ id, initialCamera }) {
+export function Maplibre({ id }) {
   const ref = useRef(null);
-  const cameraRef = useRef(null);
 
   useEffect(() => {
     if (ref.current) return;
 
-    ref.current = createMap(id, initialCamera);
-    cameraRef.current = initialCamera || {};
+    ref.current = createMap(id);
 
     window.maplibre = ref.current;
-  }, [id, initialCamera]);
+  }, [id]);
 
   // useEffect(() => {
   //   return () => {
